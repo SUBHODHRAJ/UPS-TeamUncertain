@@ -77,7 +77,7 @@
     <div class="login-box">
         <h1>Login Page</h1>
 
-        <form action="/login" method="post">
+        <form id="login-form">
             <p>Testing Git Hub</p>
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" 
@@ -101,6 +101,18 @@
         </div>
     </div>
 
+<<<<<<< HEAD
+=======
+    <script>
+        document.getElementById("login-form").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            const username = document.getElementById("username").value.trim();
+            sessionStorage.setItem("username", username);
+            window.location.href = "home.html";
+        });
+    </script>
+>>>>>>> b4bc615b74ad6f7c8b4d6a4d28e44f373761322e
 
 </body>
 </html>
